@@ -24,8 +24,7 @@
                         ],
                         "styles": [
                             "src/styles.css",
-                            "src/assets/b4/css/bootstrap.min.css",
-                            "src/assets/fontawesome/css/fontawesome.css"
+                            "src/assets/b4/css/bootstrap.min.css"
                         ],
                         "scripts": ["src/assets/jquery/jquery-3.3.1.slim.min.js",
                             "src/assets/popper/popper.min.js",
