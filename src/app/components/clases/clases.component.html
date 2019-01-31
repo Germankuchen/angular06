@@ -1,3 +1,30 @@
+<app-ng-style></app-ng-style>
+
+<app-css></app-css>
+
 <div [ngClass]="alert" class="alert" role="alert">
     A simple primary alert—check it out!
 </div>
+<button class="btn btn-info" (click)="alert = 'alert-info'; esDanger = false;">Info</button>
+<button class="btn btn-danger" (click)="alert = 'alert-danger'; esDanger = true;">Danger</button>
+<button class="btn btn-primary" (click)="alert = 'alert-primary'">Primary</button>
+
+<br><br>
+
+<h4 [ngClass]="{'text-danger': esDanger, 'text-info': !esDanger}">
+    Hello my people
+</h4>
+
+<br><br>
+
+<h4>Proceso asíncrono</h4>
+
+<button class="btn btn-success" name="guardar" id="guardar" (click)="ejecutar()" [disabled]="ejecutandose">
+    <i class="fa" [ngClass]="{'fa-sync fa-spin': ejecutandose, 'fa-save': !ejecutandose}" ></i>
+    Guardar
+</button>
+
+<p appResaltado="yellowgreen">Aca va a estar resaltado</p>
+
+<br>
+<app-ng-switch></app-ng-switch>

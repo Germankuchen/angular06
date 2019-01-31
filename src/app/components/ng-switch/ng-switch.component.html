@@ -1,0 +1,14 @@
+<span [ngSwitch]="alerta">
+<p *ngSwitchCase="'info'">
+  Info
+</p>
+<p *ngSwitchCase="'warning'">
+  Warning
+</p>
+<p *ngSwitchCase="'success'">
+  Success
+</p>
+<p *ngSwitchDefault>
+  Alert
+</p>
+</span>
